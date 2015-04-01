@@ -21,6 +21,7 @@
 		5B9B9C861ACBAAD7007AAE79 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C851ACBAAD7007AAE79 /* WaterfallLayout.swift */; };
 		5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C881ACBAB33007AAE79 /* HomeViewController.swift */; };
 		5B9B9C8C1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C8B1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift */; };
+		5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */; };
 		5B9C089F1ACA6DDB00971442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */; };
 		5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08A01ACA6DDB00971442 /* RunBro.xcdatamodeld */; };
 		5B9C08A71ACA6DDB00971442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C08A51ACA6DDB00971442 /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		5B9B9C851ACBAAD7007AAE79 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 		5B9B9C881ACBAB33007AAE79 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5B9B9C8B1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCollectionViewCell.swift; sourceTree = "<group>"; };
+		5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureManager.swift; sourceTree = "<group>"; };
 		5B9C08991ACA6DDB00971442 /* RunBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C089D1ACA6DDB00971442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,14 @@
 			name = WaterfallView;
 			sourceTree = "<group>";
 		};
+		5B9B9C8D1ACBABEF007AAE79 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		5B9C08901ACA6DDB00971442 = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +276,7 @@
 		5B9C089B1ACA6DDB00971442 /* RunBro */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9C8D1ACBABEF007AAE79 /* Data */,
 				5B9B9C841ACBAAC6007AAE79 /* Layout */,
 				5B9B9C6D1ACBAA64007AAE79 /* Assets */,
 				5B9B9C6C1ACBAA31007AAE79 /* Controllers */,
@@ -476,6 +487,7 @@
 				5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */,
 				5B9B9C861ACBAAD7007AAE79 /* WaterfallLayout.swift in Sources */,
 				5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */,
+				5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */,
 				5B9C09001ACA732F00971442 /* RBUser.swift in Sources */,
 				5B9B9C8C1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift in Sources */,
 			);
