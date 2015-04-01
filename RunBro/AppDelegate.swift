@@ -1,4 +1,3 @@
-//
 //  AppDelegate.swift
 //  RunBro
 //
@@ -17,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("vahcEB1e4DSpzF0mJ4rcAdmganRfcuy5APgBlld8", clientKey: "rhEBYhAfOOeWFZBGWLbUZE8OKoVvkvLid1D6ayvz")
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        
+        var defaultACL = PFACL()
+        defaultACL.setPublicReadAccess(true)
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
+        
+        var user = RBUser()
+        
+        
         return true
     }
 
@@ -49,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "RunBro.RunBro" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] as NSURL
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
