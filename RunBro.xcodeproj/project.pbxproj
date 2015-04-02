@@ -34,6 +34,9 @@
 		5B9B9CA71ACD1C96007AAE79 /* OrderStatusPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CA11ACD1C96007AAE79 /* OrderStatusPreviewView.swift */; };
 		5B9B9CAA1ACD1D34007AAE79 /* Golbal Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CA91ACD1D34007AAE79 /* Golbal Variables.swift */; };
 		5B9B9CAD1ACD25E6007AAE79 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CAC1ACD25E6007AAE79 /* CurrentViewController.swift */; };
+		5B9B9CB01ACD28AD007AAE79 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CAF1ACD28AD007AAE79 /* ProfileViewController.swift */; };
+		5B9B9CB41ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CB21ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift */; };
+		5B9B9CB51ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9B9CB31ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.xib */; };
 		5B9C089F1ACA6DDB00971442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */; };
 		5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08A01ACA6DDB00971442 /* RunBro.xcdatamodeld */; };
 		5B9C08A71ACA6DDB00971442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C08A51ACA6DDB00971442 /* Main.storyboard */; };
@@ -114,6 +117,9 @@
 		5B9B9CA11ACD1C96007AAE79 /* OrderStatusPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusPreviewView.swift; sourceTree = "<group>"; };
 		5B9B9CA91ACD1D34007AAE79 /* Golbal Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Golbal Variables.swift"; sourceTree = "<group>"; };
 		5B9B9CAC1ACD25E6007AAE79 /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
+		5B9B9CAF1ACD28AD007AAE79 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5B9B9CB21ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewFlowLayoutCell.swift; sourceTree = "<group>"; };
+		5B9B9CB31ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCollectionViewFlowLayoutCell.xib; sourceTree = "<group>"; };
 		5B9C08991ACA6DDB00971442 /* RunBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C089D1ACA6DDB00971442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 		5B9B9C6B1ACBAA24007AAE79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9CB11ACD2919007AAE79 /* CollectionViewFlowLayout */,
 				5B9B9C9B1ACD1C73007AAE79 /* OrderDetailViewComponents */,
 				5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */,
 				5B9B9C8A1ACBAB56007AAE79 /* WaterfallView */,
@@ -211,6 +218,7 @@
 		5B9B9C6C1ACBAA31007AAE79 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9CAE1ACD2889007AAE79 /* Profile */,
 				5B9B9CAB1ACD252C007AAE79 /* Current */,
 				5B9B9C921ACD1BB7007AAE79 /* Order */,
 				5B9B9C871ACBAB1F007AAE79 /* Home */,
@@ -320,6 +328,23 @@
 				5B9B9CAC1ACD25E6007AAE79 /* CurrentViewController.swift */,
 			);
 			name = Current;
+			sourceTree = "<group>";
+		};
+		5B9B9CAE1ACD2889007AAE79 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B9CAF1ACD28AD007AAE79 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5B9B9CB11ACD2919007AAE79 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B9CB21ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift */,
+				5B9B9CB31ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.xib */,
+			);
+			name = CollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 		5B9C08901ACA6DDB00971442 = {
@@ -532,6 +557,7 @@
 				5B9B9C831ACBAA8A007AAE79 /* 7.jpg in Resources */,
 				5B9B9C7E1ACBAA8A007AAE79 /* 2.jpg in Resources */,
 				5B9B9C7D1ACBAA8A007AAE79 /* 1.jpg in Resources */,
+				5B9B9CB51ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,11 +581,13 @@
 				5B9C08FE1ACA72DF00971442 /* Order.swift in Sources */,
 				5B9B9C911ACBADBF007AAE79 /* CollectionFilterView.swift in Sources */,
 				5B9B9CA61ACD1C96007AAE79 /* OrderStatusCompletedView.swift in Sources */,
+				5B9B9CB01ACD28AD007AAE79 /* ProfileViewController.swift in Sources */,
 				5B9B9CA41ACD1C96007AAE79 /* OrderStatusWaitingView.swift in Sources */,
 				5B9B9CA71ACD1C96007AAE79 /* OrderStatusPreviewView.swift in Sources */,
 				5B9B9C9A1ACD1BC9007AAE79 /* OrderComfirmationViewController.swift in Sources */,
 				5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */,
 				5B9B9C861ACBAAD7007AAE79 /* WaterfallLayout.swift in Sources */,
+				5B9B9CB41ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift in Sources */,
 				5B9B9CAA1ACD1D34007AAE79 /* Golbal Variables.swift in Sources */,
 				5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */,
 				5B9B9CA51ACD1C96007AAE79 /* OrderStatusInProcessView.swift in Sources */,
