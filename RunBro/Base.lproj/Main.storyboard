@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f21-aY-dAA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vCS-Yy-w3R">
+            <objects>
+                <tabBarController id="f21-aY-dAA" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Tb-zl-lUA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BA4-RT-TxM" kind="relationship" relationship="viewControllers" id="MSm-0s-7CH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGO-vP-0mF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1036" y="505"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="TFO-8U-tQU">
+            <objects>
+                <navigationController id="BA4-RT-TxM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="4pq-n0-Cjf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F4g-9W-Se4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o6Y-9F-USF" kind="relationship" relationship="rootViewController" id="E6c-qI-iFD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EjH-Ut-V3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="517"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tsw-c6-Yfm">
+            <objects>
+                <collectionViewController id="o6Y-9F-USF" customClass="HomeViewController" customModule="RunBro" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GH3-P4-Khc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wHe-aN-Pze">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="o6Y-9F-USF" id="Bdm-jS-We1"/>
+                            <outlet property="delegate" destination="o6Y-9F-USF" id="iH2-6e-Ohm"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="OWg-jY-N09"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fQ-fv-2aF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="517"/>
+        </scene>
+    </scenes>
 </document>

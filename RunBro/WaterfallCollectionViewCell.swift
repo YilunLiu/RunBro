@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+let WaterViewCellIdentifier = "Waterfallell"
+
 class WaterfallCollectionViewCell: UICollectionViewCell {
     
     var Identifier = "WaterfallCollectionViewCell"

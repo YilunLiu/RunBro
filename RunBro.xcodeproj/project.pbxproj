@@ -22,6 +22,7 @@
 		5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C881ACBAB33007AAE79 /* HomeViewController.swift */; };
 		5B9B9C8C1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C8B1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift */; };
 		5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */; };
+		5B9B9C911ACBADBF007AAE79 /* CollectionFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */; };
 		5B9C089F1ACA6DDB00971442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */; };
 		5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08A01ACA6DDB00971442 /* RunBro.xcdatamodeld */; };
 		5B9C08A71ACA6DDB00971442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C08A51ACA6DDB00971442 /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 		5B9B9C881ACBAB33007AAE79 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5B9B9C8B1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureManager.swift; sourceTree = "<group>"; };
+		5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFilterView.swift; sourceTree = "<group>"; };
 		5B9C08991ACA6DDB00971442 /* RunBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C089D1ACA6DDB00971442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		5B9B9C6B1ACBAA24007AAE79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */,
 				5B9B9C8A1ACBAB56007AAE79 /* WaterfallView */,
 			);
 			name = Views;
@@ -484,6 +487,7 @@
 				5B65D8801ACBA50800C91963 /* IntroductionDataModel.swift in Sources */,
 				5B9C089F1ACA6DDB00971442 /* AppDelegate.swift in Sources */,
 				5B9C08FE1ACA72DF00971442 /* Order.swift in Sources */,
+				5B9B9C911ACBADBF007AAE79 /* CollectionFilterView.swift in Sources */,
 				5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */,
 				5B9B9C861ACBAAD7007AAE79 /* WaterfallLayout.swift in Sources */,
 				5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */,
