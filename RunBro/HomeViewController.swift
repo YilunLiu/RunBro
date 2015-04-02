@@ -11,7 +11,7 @@ import UIKit
 
 
 let GRID_WIDTH: CGFloat = 155;
-class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate {
+class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, OrderDetailManagerDatasource {
     
     
     var orders = FixtureManager.sharedInstance.orders 
@@ -106,7 +106,13 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate {
     
     
     // MARK: UICollectionViewDelegate
-    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        var orderDetailManager = storyboard?.instantiateViewControllerWithIdentifier("OrderDetailManager") as OrderDetailManager
+        orderDetailManager.orderDatasouce = self
+        orderDetailManager.currentIndex = indexPath.item
+        self.navigationController?.pushViewController(orderDetailManager, animated: false)
+        
+    }
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {

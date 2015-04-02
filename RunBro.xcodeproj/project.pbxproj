@@ -23,6 +23,16 @@
 		5B9B9C8C1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C8B1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift */; };
 		5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */; };
 		5B9B9C911ACBADBF007AAE79 /* CollectionFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */; };
+		5B9B9C971ACD1BC9007AAE79 /* OrderDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C931ACD1BC9007AAE79 /* OrderDetailManager.swift */; };
+		5B9B9C991ACD1BC9007AAE79 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C951ACD1BC9007AAE79 /* OrderDetailViewController.swift */; };
+		5B9B9C9A1ACD1BC9007AAE79 /* OrderComfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C961ACD1BC9007AAE79 /* OrderComfirmationViewController.swift */; };
+		5B9B9CA21ACD1C96007AAE79 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C9C1ACD1C96007AAE79 /* CommentTableViewCell.swift */; };
+		5B9B9CA31ACD1C96007AAE79 /* OrderDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C9D1ACD1C96007AAE79 /* OrderDetailHeaderView.swift */; };
+		5B9B9CA41ACD1C96007AAE79 /* OrderStatusWaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C9E1ACD1C96007AAE79 /* OrderStatusWaitingView.swift */; };
+		5B9B9CA51ACD1C96007AAE79 /* OrderStatusInProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9C9F1ACD1C96007AAE79 /* OrderStatusInProcessView.swift */; };
+		5B9B9CA61ACD1C96007AAE79 /* OrderStatusCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CA01ACD1C96007AAE79 /* OrderStatusCompletedView.swift */; };
+		5B9B9CA71ACD1C96007AAE79 /* OrderStatusPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CA11ACD1C96007AAE79 /* OrderStatusPreviewView.swift */; };
+		5B9B9CAA1ACD1D34007AAE79 /* Golbal Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B9CA91ACD1D34007AAE79 /* Golbal Variables.swift */; };
 		5B9C089F1ACA6DDB00971442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */; };
 		5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08A01ACA6DDB00971442 /* RunBro.xcdatamodeld */; };
 		5B9C08A71ACA6DDB00971442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C08A51ACA6DDB00971442 /* Main.storyboard */; };
@@ -92,6 +102,16 @@
 		5B9B9C8B1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B9B9C8E1ACBABFC007AAE79 /* FixtureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureManager.swift; sourceTree = "<group>"; };
 		5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFilterView.swift; sourceTree = "<group>"; };
+		5B9B9C931ACD1BC9007AAE79 /* OrderDetailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailManager.swift; sourceTree = "<group>"; };
+		5B9B9C951ACD1BC9007AAE79 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		5B9B9C961ACD1BC9007AAE79 /* OrderComfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderComfirmationViewController.swift; sourceTree = "<group>"; };
+		5B9B9C9C1ACD1C96007AAE79 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		5B9B9C9D1ACD1C96007AAE79 /* OrderDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailHeaderView.swift; sourceTree = "<group>"; };
+		5B9B9C9E1ACD1C96007AAE79 /* OrderStatusWaitingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusWaitingView.swift; sourceTree = "<group>"; };
+		5B9B9C9F1ACD1C96007AAE79 /* OrderStatusInProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusInProcessView.swift; sourceTree = "<group>"; };
+		5B9B9CA01ACD1C96007AAE79 /* OrderStatusCompletedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusCompletedView.swift; sourceTree = "<group>"; };
+		5B9B9CA11ACD1C96007AAE79 /* OrderStatusPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusPreviewView.swift; sourceTree = "<group>"; };
+		5B9B9CA91ACD1D34007AAE79 /* Golbal Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Golbal Variables.swift"; sourceTree = "<group>"; };
 		5B9C08991ACA6DDB00971442 /* RunBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C089D1ACA6DDB00971442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9C089E1ACA6DDB00971442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +199,7 @@
 		5B9B9C6B1ACBAA24007AAE79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9C9B1ACD1C73007AAE79 /* OrderDetailViewComponents */,
 				5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */,
 				5B9B9C8A1ACBAB56007AAE79 /* WaterfallView */,
 			);
@@ -188,6 +209,7 @@
 		5B9B9C6C1ACBAA31007AAE79 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9C921ACD1BB7007AAE79 /* Order */,
 				5B9B9C871ACBAB1F007AAE79 /* Home */,
 			);
 			name = Controllers;
@@ -258,6 +280,37 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		5B9B9C921ACD1BB7007AAE79 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B9C931ACD1BC9007AAE79 /* OrderDetailManager.swift */,
+				5B9B9C951ACD1BC9007AAE79 /* OrderDetailViewController.swift */,
+				5B9B9C961ACD1BC9007AAE79 /* OrderComfirmationViewController.swift */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		5B9B9C9B1ACD1C73007AAE79 /* OrderDetailViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B9C9C1ACD1C96007AAE79 /* CommentTableViewCell.swift */,
+				5B9B9C9D1ACD1C96007AAE79 /* OrderDetailHeaderView.swift */,
+				5B9B9C9E1ACD1C96007AAE79 /* OrderStatusWaitingView.swift */,
+				5B9B9C9F1ACD1C96007AAE79 /* OrderStatusInProcessView.swift */,
+				5B9B9CA01ACD1C96007AAE79 /* OrderStatusCompletedView.swift */,
+				5B9B9CA11ACD1C96007AAE79 /* OrderStatusPreviewView.swift */,
+			);
+			name = OrderDetailViewComponents;
+			sourceTree = "<group>";
+		};
+		5B9B9CA81ACD1D23007AAE79 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B9CA91ACD1D34007AAE79 /* Golbal Variables.swift */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
 		5B9C08901ACA6DDB00971442 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +332,7 @@
 		5B9C089B1ACA6DDB00971442 /* RunBro */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9CA81ACD1D23007AAE79 /* Macro */,
 				5B9B9C8D1ACBABEF007AAE79 /* Data */,
 				5B9B9C841ACBAAC6007AAE79 /* Layout */,
 				5B9B9C6D1ACBAA64007AAE79 /* Assets */,
@@ -486,14 +540,24 @@
 			files = (
 				5B65D8801ACBA50800C91963 /* IntroductionDataModel.swift in Sources */,
 				5B9C089F1ACA6DDB00971442 /* AppDelegate.swift in Sources */,
+				5B9B9CA31ACD1C96007AAE79 /* OrderDetailHeaderView.swift in Sources */,
 				5B9C08FE1ACA72DF00971442 /* Order.swift in Sources */,
 				5B9B9C911ACBADBF007AAE79 /* CollectionFilterView.swift in Sources */,
+				5B9B9CA61ACD1C96007AAE79 /* OrderStatusCompletedView.swift in Sources */,
+				5B9B9CA41ACD1C96007AAE79 /* OrderStatusWaitingView.swift in Sources */,
+				5B9B9CA71ACD1C96007AAE79 /* OrderStatusPreviewView.swift in Sources */,
+				5B9B9C9A1ACD1BC9007AAE79 /* OrderComfirmationViewController.swift in Sources */,
 				5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */,
 				5B9B9C861ACBAAD7007AAE79 /* WaterfallLayout.swift in Sources */,
+				5B9B9CAA1ACD1D34007AAE79 /* Golbal Variables.swift in Sources */,
 				5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */,
+				5B9B9CA51ACD1C96007AAE79 /* OrderStatusInProcessView.swift in Sources */,
 				5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */,
+				5B9B9C991ACD1BC9007AAE79 /* OrderDetailViewController.swift in Sources */,
 				5B9C09001ACA732F00971442 /* RBUser.swift in Sources */,
+				5B9B9CA21ACD1C96007AAE79 /* CommentTableViewCell.swift in Sources */,
 				5B9B9C8C1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift in Sources */,
+				5B9B9C971ACD1BC9007AAE79 /* OrderDetailManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
