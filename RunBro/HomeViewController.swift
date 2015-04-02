@@ -66,12 +66,13 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate {
     }
     
     func collectionView(collectionView: UICollectionView, layout: UICollectionViewLayout, heightForFooterInSection section: Int) -> CGFloat {
-        return 60
+        return 0
     }
     
     
     func collectionView(collectionView: UICollectionView, layout: UICollectionViewLayout, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
+        return 60
+
     }
     
     
