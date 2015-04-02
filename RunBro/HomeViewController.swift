@@ -30,6 +30,7 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         // Do any additional setup after loading the view.
         var layout = WaterfallLayout()
         layout.columnCount = UIDevice.currentDevice().orientation == .Portrait ? 2 : 3
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         self.collectionView?.setCollectionViewLayout(layout, animated: false)
         self.collectionView?.backgroundColor = UIColor.whiteColor()
         
