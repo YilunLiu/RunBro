@@ -64,7 +64,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="OWg-jY-N09">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AME-fW-Ben"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AME-fW-Ben">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="o6Y-9F-USF" id="7FU-3k-XE2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fQ-fv-2aF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -540,21 +544,21 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="4MD-yc-K2c"/>
-                                <exclude reference="swB-Df-9k6"/>
-                                <exclude reference="5mT-om-PCc"/>
-                                <exclude reference="yYM-Df-be6"/>
-                                <exclude reference="LLT-Vb-e5J"/>
                                 <exclude reference="2Du-Ej-JhT"/>
+                                <exclude reference="4MD-yc-K2c"/>
+                                <exclude reference="5mT-om-PCc"/>
+                                <exclude reference="LLT-Vb-e5J"/>
                                 <exclude reference="oNW-iC-6Tm"/>
-                                <exclude reference="Hvp-92-F1g"/>
-                                <exclude reference="Eic-y1-dCQ"/>
-                                <exclude reference="B2P-Sh-M4b"/>
+                                <exclude reference="swB-Df-9k6"/>
+                                <exclude reference="yYM-Df-be6"/>
                                 <exclude reference="2gb-WU-6Op"/>
+                                <exclude reference="B2P-Sh-M4b"/>
+                                <exclude reference="Eic-y1-dCQ"/>
+                                <exclude reference="Hvp-92-F1g"/>
                                 <exclude reference="5kT-ZB-o1i"/>
+                                <exclude reference="1Zz-sQ-TZC"/>
                                 <exclude reference="tDV-dC-hm7"/>
                                 <exclude reference="wIW-fg-6ab"/>
-                                <exclude reference="1Zz-sQ-TZC"/>
                             </mask>
                         </variation>
                     </view>
@@ -894,8 +898,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="gMv-NW-ZKB"/>
                                         <exclude reference="eNw-Nb-rdT"/>
+                                        <exclude reference="gMv-NW-ZKB"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -1080,8 +1084,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Bbr-kV-7a9"/>
                                 <exclude reference="8b1-mb-WFR"/>
+                                <exclude reference="Bbr-kV-7a9"/>
                                 <exclude reference="DLh-Ur-DSy"/>
                             </mask>
                         </variation>

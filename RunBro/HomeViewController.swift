@@ -11,11 +11,17 @@ import UIKit
 
 
 let GRID_WIDTH: CGFloat = 155;
-class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, OrderDetailManagerDatasource {
+class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, OrderDetailManagerDatasource, CMPopTipViewDelegate, UITableViewDelegate, UITableViewDataSource {
+    
     
     
     var orders = FixtureManager.sharedInstance.orders 
     
+    
+    // Add Table View
+    var addTableView = UITableView()
+    
+    let AddInfo = ["Order Food", "Personalize"]
     
     // MARK: - Life cycley
     override func viewDidLoad() {
@@ -149,6 +155,17 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         layout.columnCount = toInterfaceOrientation == .Portrait ? 2 : 3
     }
     
+    //tableview datasource
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if tableView == addTableView {
+            return 1
+        }
+        else {
+            return 0
+        }
+    }
+    
     
     //Mark: - Order Manager Datasource
     
@@ -161,4 +178,25 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         return orders.count
     }
     
+    //Mark: - Target Action
+    @IBAction func addButtonPressed(sender: UIBarButtonItem) {
+
+        
+        var popView = CMPopTipView(message: "HelloHelloHelloHelloHello")
+        popView.delegate = self
+        popView.has3DStyle = false
+        popView.hasShadow = false
+        popView.dismissTapAnywhere = true
+        popView.hasGradientBackground =  false
+        popView.backgroundColor = UIColor.blackColor()
+        popView.cornerRadius = 0.5
+        popView.topMargin = 10
+        popView.presentPointingAtBarButtonItem(sender, animated: true)
+        
+    }
+    
+    //PopView Delegate
+    func popTipViewWasDismissedByUser(popTipView: CMPopTipView!) {
+        
+    }
 }
