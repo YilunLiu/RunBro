@@ -18,10 +18,13 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
     var orders = FixtureManager.sharedInstance.orders 
     
     
+    
     // Add Table View
     var addTableView = UITableView()
     
     let AddInfo = ["Order Food", "Personalize"]
+    let AddCellHeight:CGFloat = 30.0
+    let TableWidth:CGFloat = 100.0
     
     // MARK: - Life cycley
     override func viewDidLoad() {
@@ -29,6 +32,10 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         
         // Uncomment the following line to preserve selection between presentations
         
+        
+        //tableview
+        addTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        addTableView.frame = CGRectMake(0, 0, TableWidth, AddCellHeight * CGFloat(AddInfo.count))
         
         
         // self.clearsSelectionOnViewWillAppear = false
@@ -166,6 +173,29 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         }
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == addTableView {
+            if section == 0 {
+                return 2
+            }
+            else{
+                return 0
+            }
+        }
+        else {
+            return 0
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return AddCellHeight
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Default") as UITableViewCell
+        cell.textLabel?.text = AddInfo[indexPath.row]
+        return cell
+    }
     
     //Mark: - Order Manager Datasource
     
@@ -182,7 +212,7 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
     @IBAction func addButtonPressed(sender: UIBarButtonItem) {
 
         
-        var popView = CMPopTipView(message: "HelloHelloHelloHelloHello")
+        var popView = CMPopTipView(customView: addTableView)
         popView.delegate = self
         popView.has3DStyle = false
         popView.hasShadow = false
