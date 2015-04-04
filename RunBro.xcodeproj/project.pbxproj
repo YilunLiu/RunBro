@@ -224,7 +224,6 @@
 				5B9B9CB61ACE47DE007AAE79 /* Input */,
 				5B9B9CB11ACD2919007AAE79 /* CollectionViewFlowLayout */,
 				5B9B9C9B1ACD1C73007AAE79 /* OrderDetailViewComponents */,
-				5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */,
 				5B9B9C8A1ACBAB56007AAE79 /* WaterfallView */,
 			);
 			name = Views;
@@ -321,6 +320,7 @@
 		5B9B9C9B1ACD1C73007AAE79 /* OrderDetailViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B9C901ACBADBF007AAE79 /* CollectionFilterView.swift */,
 				5B9B9C9C1ACD1C96007AAE79 /* CommentTableViewCell.swift */,
 				5B9B9C9D1ACD1C96007AAE79 /* OrderDetailHeaderView.swift */,
 				5B9B9C9E1ACD1C96007AAE79 /* OrderStatusWaitingView.swift */,

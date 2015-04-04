@@ -32,7 +32,9 @@
             <objects>
                 <navigationController id="BA4-RT-TxM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="4pq-n0-Cjf"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F4g-9W-Se4">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="F4g-9W-Se4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -49,7 +51,7 @@
             <objects>
                 <collectionViewController id="o6Y-9F-USF" customClass="HomeViewController" customModule="RunBro" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GH3-P4-Khc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wHe-aN-Pze">
                             <size key="itemSize" width="50" height="50"/>
@@ -63,6 +65,7 @@
                             <outlet property="delegate" destination="o6Y-9F-USF" id="iH2-6e-Ohm"/>
                         </connections>
                     </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="OWg-jY-N09">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AME-fW-Ben">
                             <connections>
@@ -246,7 +249,9 @@
             <objects>
                 <navigationController id="lk5-IH-JND" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="s5u-wD-TID"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IJ6-4Q-qTa">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IJ6-4Q-qTa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -267,7 +272,7 @@
                         <viewControllerLayoutGuide type="bottom" id="LCB-TP-IIK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fQ6-Fu-HSf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frU-Ft-bmT" userLabel="Seperation Line">
@@ -371,7 +376,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Current" id="y5A-dM-Aod"/>
                     <connections>
                         <outlet property="myCurrentJobsCollectionView" destination="l7Y-Xh-btF" id="mLP-ZQ-YcH"/>
@@ -387,7 +392,9 @@
             <objects>
                 <navigationController id="KuG-gD-18F" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="VWJ-nt-4JQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cDT-rA-anH">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cDT-rA-anH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -562,7 +569,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Item" id="0n7-6g-3MD"/>
                     <navigationItem key="navigationItem" id="bto-kJ-r6J">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="lpT-ex-wOd">
@@ -588,7 +595,7 @@
             <objects>
                 <tableViewController id="OBB-nD-MUH" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="40" sectionFooterHeight="1" id="hUW-ft-aV2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>

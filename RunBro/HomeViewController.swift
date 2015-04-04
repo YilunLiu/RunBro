@@ -23,8 +23,8 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
     var addTableView = UITableView()
     
     let AddInfo = ["Order Food", "Personalize"]
-    let AddCellHeight:CGFloat = 30.0
-    let TableWidth:CGFloat = 100.0
+    let AddCellHeight:CGFloat = 40.0
+    let TableWidth:CGFloat = 140.0
     
     // MARK: - Life cycley
     override func viewDidLoad() {
@@ -36,6 +36,10 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         //tableview
         addTableView.separatorStyle = UITableViewCellSeparatorStyle.None
         addTableView.frame = CGRectMake(0, 0, TableWidth, AddCellHeight * CGFloat(AddInfo.count))
+        addTableView.backgroundColor = UIColor.blackColor()
+        addTableView.alpha = 0.95
+        addTableView.delegate = self
+        addTableView.dataSource = self
         
         
         // self.clearsSelectionOnViewWillAppear = false
@@ -194,6 +198,9 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Default") as UITableViewCell
         cell.textLabel?.text = AddInfo[indexPath.row]
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.textAlignment = NSTextAlignment.Center
+        cell.backgroundColor = UIColor.clearColor()
         return cell
     }
     
