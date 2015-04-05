@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
         
         var user = RBUser()
+        var order = Order()
+        var restuarant = Restaurant()
+        var menuItem = MenuItem()
         
         
         return true

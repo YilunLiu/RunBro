@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3C858B1AD0759A002107E8 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C858A1AD0759A002107E8 /* RestaurantsTableViewController.swift */; };
+		5B3C858D1AD075E7002107E8 /* MenuListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C858C1AD075E7002107E8 /* MenuListTableViewController.swift */; };
+		5B3C858F1AD0819E002107E8 /* Restuarant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C858E1AD0819E002107E8 /* Restuarant.swift */; };
+		5B3C85911AD0823B002107E8 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C85901AD0823B002107E8 /* MenuItem.swift */; };
+		5B3C85941AD08424002107E8 /* BurgerKing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B3C85931AD08424002107E8 /* BurgerKing.jpg */; };
+		5B3C85971AD08C4D002107E8 /* RestuarantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C85961AD08C4D002107E8 /* RestuarantTableViewCell.swift */; };
 		5B65D8801ACBA50800C91963 /* IntroductionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65D87F1ACBA50800C91963 /* IntroductionDataModel.swift */; };
+		5B85E5721AD10C5A002B9E6D /* FoodCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85E5711AD10C5A002B9E6D /* FoodCheckoutViewController.swift */; };
 		5B9B9C711ACBAA7D007AAE79 /* Aragorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B9B9C6F1ACBAA7D007AAE79 /* Aragorn.jpg */; };
 		5B9B9C721ACBAA7D007AAE79 /* Frodo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B9B9C701ACBAA7D007AAE79 /* Frodo.jpg */; };
 		5B9B9C7C1ACBAA8A007AAE79 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B9B9C741ACBAA8A007AAE79 /* 0.jpg */; };
@@ -83,6 +90,7 @@
 		5B9C08FB1ACA71B700971442 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9C08C41ACA6FD700971442 /* CloudKit.framework */; };
 		5B9C08FE1ACA72DF00971442 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08FD1ACA72DF00971442 /* Order.swift */; };
 		5B9C09001ACA732F00971442 /* RBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08FF1ACA732F00971442 /* RBUser.swift */; };
+		5BDB6EBC1AD0DE9E008E7083 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6EBB1AD0DE9E008E7083 /* MenuItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +104,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B3C858A1AD0759A002107E8 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		5B3C858C1AD075E7002107E8 /* MenuListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListTableViewController.swift; sourceTree = "<group>"; };
+		5B3C858E1AD0819E002107E8 /* Restuarant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restuarant.swift; sourceTree = "<group>"; };
+		5B3C85901AD0823B002107E8 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		5B3C85931AD08424002107E8 /* BurgerKing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BurgerKing.jpg; sourceTree = "<group>"; };
+		5B3C85961AD08C4D002107E8 /* RestuarantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestuarantTableViewCell.swift; sourceTree = "<group>"; };
 		5B65D87F1ACBA50800C91963 /* IntroductionDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionDataModel.swift; sourceTree = "<group>"; };
+		5B85E5711AD10C5A002B9E6D /* FoodCheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCheckoutViewController.swift; sourceTree = "<group>"; };
 		5B9B9C6F1ACBAA7D007AAE79 /* Aragorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Aragorn.jpg; sourceTree = "<group>"; };
 		5B9B9C701ACBAA7D007AAE79 /* Frodo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Frodo.jpg; sourceTree = "<group>"; };
 		5B9B9C741ACBAA8A007AAE79 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
@@ -165,6 +180,7 @@
 		5B9C08EC1ACA70B700971442 /* RunBro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunBro-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B9C08FD1ACA72DF00971442 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Order.swift; path = Models/Order.swift; sourceTree = "<group>"; };
 		5B9C08FF1ACA732F00971442 /* RBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBUser.swift; sourceTree = "<group>"; };
+		5BDB6EBB1AD0DE9E008E7083 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,9 +233,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B3C85891AD0756E002107E8 /* AddOrder */ = {
+			isa = PBXGroup;
+			children = (
+				5B3C858A1AD0759A002107E8 /* RestaurantsTableViewController.swift */,
+				5B3C858C1AD075E7002107E8 /* MenuListTableViewController.swift */,
+				5B85E5711AD10C5A002B9E6D /* FoodCheckoutViewController.swift */,
+			);
+			name = AddOrder;
+			sourceTree = "<group>";
+		};
+		5B3C85921AD0840B002107E8 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				5B3C85931AD08424002107E8 /* BurgerKing.jpg */,
+			);
+			name = Restaurants;
+			sourceTree = "<group>";
+		};
+		5B3C85951AD08C30002107E8 /* Restuarants */ = {
+			isa = PBXGroup;
+			children = (
+				5B3C85961AD08C4D002107E8 /* RestuarantTableViewCell.swift */,
+				5BDB6EBB1AD0DE9E008E7083 /* MenuItemCell.swift */,
+			);
+			name = Restuarants;
+			sourceTree = "<group>";
+		};
 		5B9B9C6B1ACBAA24007AAE79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B3C85951AD08C30002107E8 /* Restuarants */,
 				5B9B9CC31ACE5498007AAE79 /* PopUpView */,
 				5B9B9CB61ACE47DE007AAE79 /* Input */,
 				5B9B9CB11ACD2919007AAE79 /* CollectionViewFlowLayout */,
@@ -232,6 +276,7 @@
 		5B9B9C6C1ACBAA31007AAE79 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B3C85891AD0756E002107E8 /* AddOrder */,
 				5B9B9CBE1ACE5080007AAE79 /* Signin & Signup */,
 				5B9B9CB91ACE506A007AAE79 /* Introduction */,
 				5B9B9CAE1ACD2889007AAE79 /* Profile */,
@@ -245,6 +290,7 @@
 		5B9B9C6D1ACBAA64007AAE79 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				5B3C85921AD0840B002107E8 /* Restaurants */,
 				5B9B9C731ACBAA80007AAE79 /* Images */,
 				5B9B9C6E1ACBAA74007AAE79 /* ProfilePicture */,
 			);
@@ -512,6 +558,8 @@
 				5B9C08FD1ACA72DF00971442 /* Order.swift */,
 				5B9C08FF1ACA732F00971442 /* RBUser.swift */,
 				5B65D87F1ACBA50800C91963 /* IntroductionDataModel.swift */,
+				5B3C858E1AD0819E002107E8 /* Restuarant.swift */,
+				5B3C85901AD0823B002107E8 /* MenuItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -609,6 +657,7 @@
 				5B9B9C831ACBAA8A007AAE79 /* 7.jpg in Resources */,
 				5B9B9C7E1ACBAA8A007AAE79 /* 2.jpg in Resources */,
 				5B9B9C7D1ACBAA8A007AAE79 /* 1.jpg in Resources */,
+				5B3C85941AD08424002107E8 /* BurgerKing.jpg in Resources */,
 				5B9B9CB51ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,23 +686,30 @@
 				5B9B9CBC1ACE5078007AAE79 /* IntroductionPageViewController.swift in Sources */,
 				5B9B9CA61ACD1C96007AAE79 /* OrderStatusCompletedView.swift in Sources */,
 				5B9B9CC11ACE508B007AAE79 /* SigninViewController.swift in Sources */,
+				5B3C85971AD08C4D002107E8 /* RestuarantTableViewCell.swift in Sources */,
 				5B9B9CB01ACD28AD007AAE79 /* ProfileViewController.swift in Sources */,
 				5B9B9CA41ACD1C96007AAE79 /* OrderStatusWaitingView.swift in Sources */,
 				5B9B9CA71ACD1C96007AAE79 /* OrderStatusPreviewView.swift in Sources */,
 				5B9B9C9A1ACD1BC9007AAE79 /* OrderComfirmationViewController.swift in Sources */,
 				5B9C08A21ACA6DDB00971442 /* RunBro.xcdatamodeld in Sources */,
+				5B85E5721AD10C5A002B9E6D /* FoodCheckoutViewController.swift in Sources */,
 				5B9B9C861ACBAAD7007AAE79 /* WaterfallLayout.swift in Sources */,
 				5B9B9CB81ACE4826007AAE79 /* RBInputTextView.swift in Sources */,
+				5BDB6EBC1AD0DE9E008E7083 /* MenuItemCell.swift in Sources */,
 				5B9B9CB41ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift in Sources */,
 				5B9B9CAA1ACD1D34007AAE79 /* Golbal Variables.swift in Sources */,
 				5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */,
+				5B3C858F1AD0819E002107E8 /* Restuarant.swift in Sources */,
+				5B3C858B1AD0759A002107E8 /* RestaurantsTableViewController.swift in Sources */,
 				5B9B9CA51ACD1C96007AAE79 /* OrderStatusInProcessView.swift in Sources */,
 				5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */,
 				5B9B9C991ACD1BC9007AAE79 /* OrderDetailViewController.swift in Sources */,
 				5B9B9CC21ACE508B007AAE79 /* SignupViewController.swift in Sources */,
+				5B3C858D1AD075E7002107E8 /* MenuListTableViewController.swift in Sources */,
 				5B9C09001ACA732F00971442 /* RBUser.swift in Sources */,
 				5B9B9CA21ACD1C96007AAE79 /* CommentTableViewCell.swift in Sources */,
 				5B9B9C8C1ACBAB5F007AAE79 /* WaterfallCollectionViewCell.swift in Sources */,
+				5B3C85911AD0823B002107E8 /* MenuItem.swift in Sources */,
 				5B9B9CAD1ACD25E6007AAE79 /* CurrentViewController.swift in Sources */,
 				5B9B9C971ACD1BC9007AAE79 /* OrderDetailManager.swift in Sources */,
 			);

@@ -26,6 +26,8 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
     let AddCellHeight:CGFloat = 40.0
     let TableWidth:CGFloat = 140.0
     
+    var popView: CMPopTipView!
+    
     // MARK: - Life cycley
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,13 +35,7 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         // Uncomment the following line to preserve selection between presentations
         
         
-        //tableview
-        addTableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        addTableView.frame = CGRectMake(0, 0, TableWidth, AddCellHeight * CGFloat(AddInfo.count))
-        addTableView.backgroundColor = UIColor.blackColor()
-        addTableView.alpha = 0.95
-        addTableView.delegate = self
-        addTableView.dataSource = self
+
         
         
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,6 +51,25 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         self.collectionView!.registerClass(WaterfallCollectionViewCell.self, forCellWithReuseIdentifier: WaterViewCellIdentifier)
         self.collectionView?.registerClass(CollectionFilterView.self, forSupplementaryViewOfKind: WaterfallLayoutElementKindSectionHeader, withReuseIdentifier: "HeaderView")
         self.collectionView?.reloadData()
+        
+        //tableview
+        addTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        addTableView.frame = CGRectMake(0, 0, TableWidth, AddCellHeight * CGFloat(AddInfo.count))
+        addTableView.backgroundColor = UIColor.blackColor()
+        addTableView.alpha = 0.95
+        addTableView.delegate = self
+        addTableView.dataSource = self
+        
+        //popView
+        popView = CMPopTipView(customView: addTableView)
+        popView.delegate = self
+        popView.has3DStyle = false
+        popView.hasShadow = false
+        popView.dismissTapAnywhere = true
+        popView.hasGradientBackground =  false
+        popView.backgroundColor = UIColor.blackColor()
+        popView.cornerRadius = 0.5
+        popView.topMargin = 10
         
     }
     
@@ -201,8 +216,27 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.textAlignment = NSTextAlignment.Center
         cell.backgroundColor = UIColor.clearColor()
+        cell.selectionStyle = .None
         return cell
     }
+    
+    // Mark: - Tableview delegate
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView == addTableView {
+            switch (indexPath.row) {
+            case 0:
+                var controller = self.storyboard?.instantiateViewControllerWithIdentifier("OrderFoodNavigationController") as UIViewController
+                self.presentViewController(controller, animated: true, completion: nil)
+            case 1:
+                var controller = self.storyboard?.instantiateViewControllerWithIdentifier("PersonalizeNavigationController") as UIViewController
+                self.presentViewController(controller, animated: true, completion: nil)
+            default:
+                break
+            }
+            popView.dismissAnimated(true)
+        }
+    }
+    
     
     //Mark: - Order Manager Datasource
     
@@ -218,16 +252,6 @@ class HomeViewController: UICollectionViewController, WaterfallLayoutDelegate, O
     //Mark: - Target Action
     @IBAction func addButtonPressed(sender: UIBarButtonItem) {
 
-        
-        var popView = CMPopTipView(customView: addTableView)
-        popView.delegate = self
-        popView.has3DStyle = false
-        popView.hasShadow = false
-        popView.dismissTapAnywhere = true
-        popView.hasGradientBackground =  false
-        popView.backgroundColor = UIColor.blackColor()
-        popView.cornerRadius = 0.5
-        popView.topMargin = 10
         popView.presentPointingAtBarButtonItem(sender, animated: true)
         
     }

@@ -11,6 +11,8 @@ import Foundation
 class FixtureManager: NSObject{
 
     var orders = [Order]()
+    var restuarants = [Restaurant]()
+    
     
     class var sharedInstance: FixtureManager {
         struct Static {
@@ -21,6 +23,7 @@ class FixtureManager: NSObject{
         dispatch_once(&Static.token){
             Static.instance = FixtureManager()
             Static.instance?.loadOrderData()
+            Static.instance?.loadResturantData()
         }
         
         return Static.instance!
@@ -74,10 +77,32 @@ class FixtureManager: NSObject{
             order.detials = "something from somewhere with something"
             order.totalPrice = 5
             
-            
-            
-            
             orders.append(order)
         }
+    }
+    
+    
+    private func loadResturantData(){
+        var image = UIImage(named: "BurgerKing.jpg")
+        
+        var restuarant = Restaurant()
+        restuarant.pictureFile = PFFile(data: UIImagePNGRepresentation(image))
+        restuarant.name = "Burger King"
+        
+        for i in 0...10 {
+            var menuItem = MenuItem()
+            menuItem.name = "Burger"
+            menuItem.price = 3.75
+            restuarant.items.append(menuItem)
+            
+            var menuItem2 = MenuItem()
+            menuItem2.name = "Oreo Shake"
+            menuItem2.price = 7.45
+            restuarant.items.append(menuItem2)
+            
+        }
+        
+        restuarants.append(restuarant)
+        
     }
 }
