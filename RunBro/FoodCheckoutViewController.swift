@@ -54,6 +54,8 @@ class FoodCheckoutViewController: UITableViewController {
         self.detailTextView.text = prepareForDetails()
         
         
+        var tabDissmissGesture = UITapGestureRecognizer(target: self, action: Selector("dismissTextField"))
+        self.view.addGestureRecognizer(tabDissmissGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -154,6 +156,10 @@ class FoodCheckoutViewController: UITableViewController {
             }
         }
         return details
+    }
+    
+     func dismissTextField(){
+        self.deliveryFeeTextField.resignFirstResponder()
     }
     
     
