@@ -717,7 +717,10 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Your Delivery Fee Here" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHK-Ja-yCG">
                                                     <rect key="frame" x="110" y="14" width="474" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="deliveryFieldChanged:" destination="FC1-9r-Z1f" eventType="editingChanged" id="6yc-vU-lm5"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>

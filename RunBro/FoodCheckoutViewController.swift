@@ -10,6 +10,10 @@ import UIKit
 
 class FoodCheckoutViewController: UITableViewController {
 
+    
+    let deliveryFeeIndexPath = NSIndexPath(forRow: 1, inSection: 1)
+    
+    
     @IBOutlet var placeOrderButtons: [UIButton]!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var endingLabel: UILabel!
@@ -34,6 +38,10 @@ class FoodCheckoutViewController: UITableViewController {
         return Double(intValue) / 100.0
     }
     
+    var estimatedTax: Double{
+        return itemTotalPrice * 0.085
+    }
+    
     
     var order = Order()
     var items : [MenuItem]!
@@ -49,12 +57,13 @@ class FoodCheckoutViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         self.itemTotalPriceLabel.text = formatStringWithDollar(itemTotalPrice)
-        self.estimatedTaxLabel.text = formatStringWithDollar(itemTotalPrice * 0.085)
-        self.totalLabel.text = formatStringWithDollar(itemTotalPrice * 0.085 + deliveryFee)
+        self.estimatedTaxLabel.text = formatStringWithDollar(estimatedTax)
+        self.updateTotalLabel()
         self.detailTextView.text = prepareForDetails()
         
         
         var tabDissmissGesture = UITapGestureRecognizer(target: self, action: Selector("dismissTextField"))
+        tabDissmissGesture.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tabDissmissGesture)
     }
 
@@ -132,6 +141,13 @@ class FoodCheckoutViewController: UITableViewController {
     }
     */
 
+    // Mark: - TableView Delegate
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 1 && indexPath.row == 1{
+            deliveryFeeTextField.becomeFirstResponder()
+        }
+    }
+    
     // Mark: - Textfield Delegate
 
     
@@ -142,6 +158,19 @@ class FoodCheckoutViewController: UITableViewController {
         
     }
     
+    @IBAction func deliveryFieldChanged(sender: UITextField) {
+        var text = sender.text
+        if text.utf16Count == 0 {
+            sender.alpha = 1
+            deliveryFeeLabel.text = ""
+        }
+        else {
+            sender.alpha = 0.01
+            deliveryFeeLabel.text = formatStringWithDollar(deliveryFee)
+        }
+        updateTotalLabel()
+        
+    }
     
     // Mark: - Helper 
     private func formatStringWithDollar(amount: Double) -> String{
@@ -158,9 +187,15 @@ class FoodCheckoutViewController: UITableViewController {
         return details
     }
     
-     func dismissTextField(){
+    func dismissTextField(){
         self.deliveryFeeTextField.resignFirstResponder()
     }
+    
+    private func updateTotalLabel(){
+        self.totalLabel.text = formatStringWithDollar(itemTotalPrice + deliveryFee + estimatedTax)
+    }
+    
+    
     
     
 }
