@@ -12,6 +12,7 @@ class FixtureManager: NSObject{
 
     var orders = [Order]()
     var restuarants = [Restaurant]()
+    var bankCards = [BankCard]()
     
     
     class var sharedInstance: FixtureManager {
@@ -24,6 +25,7 @@ class FixtureManager: NSObject{
             Static.instance = FixtureManager()
             Static.instance?.loadOrderData()
             Static.instance?.loadResturantData()
+            Static.instance?.loadCardInfo()
         }
         
         return Static.instance!
@@ -104,5 +106,20 @@ class FixtureManager: NSObject{
         
         restuarants.append(restuarant)
         
+    }
+    
+    
+    private func loadCardInfo(){
+        var card1 = BankCard()
+        card1.lastFour = "7825"
+        card1.isDefault = true
+        card1.token = "125sfjoasnc120zs"
+        card1.type = "Visa"
+        
+        var card2 = BankCard()
+        card2.lastFour = "7255"
+        card2.isDefault = false
+        card2.token = "125sfjoasnc120zs"
+        card2.type = "Master"
     }
 }
