@@ -115,11 +115,14 @@ class FixtureManager: NSObject{
         card1.isDefault = true
         card1.token = "125sfjoasnc120zs"
         card1.type = "Visa"
+        bankCards.append(card1)
         
         var card2 = BankCard()
         card2.lastFour = "7255"
         card2.isDefault = false
         card2.token = "125sfjoasnc120zs"
         card2.type = "Master"
+        
+        bankCards.append(card2)
     }
 }
