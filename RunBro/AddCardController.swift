@@ -1,5 +1,5 @@
 //
-//  BankCardTableViewController.swift
+//  AddCardControlelr.swift
 //  RunBro
 //
 //  Created by Yilun Liu on 4/8/15.
@@ -8,19 +8,16 @@
 
 import UIKit
 
-class BankCardTableViewController: UITableViewController,BankCardManagerDelegate, UITableViewDelegate {
+class AddCardController: UITableViewController, UITextFieldDelegate {
+    
+    
+    
+    @IBOutlet weak var cardNumberLabel: UILabel!
+    @IBOutlet weak var monthYearLabel: UILabel!
+    @IBOutlet weak var cvcLabel: UILabel!
+    
+    @IBOutlet var textFields: [UITextField]!
 
-    let BankCardCellIdentifier = "BankCardCell"
-    let AddCardCellIdentifier = "AddCardCell"
-    
-    
-    let cardManager = BankCardManager.sharedInstance
-    var cards: [BankCard] {
-        return cardManager.cards
-    }
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,11 +26,10 @@ class BankCardTableViewController: UITableViewController,BankCardManagerDelegate
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-
-        BankCardManager.sharedInstance.delegate = self
-    }
-    
-    override func viewWillAppear(animated: Bool) {
+        
+        var tabDissmissGesture = UITapGestureRecognizer(target: self, action: Selector("dismissTextFields"))
+        tabDissmissGesture.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tabDissmissGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,49 +38,29 @@ class BankCardTableViewController: UITableViewController,BankCardManagerDelegate
     }
 
     // MARK: - Table view data source
-
+    /*
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        
-        return 2
+        return 0
     }
-    
-    
-    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        switch(section) {
-        case 0:
-            return cards.count
-        case 1:
-            return 1
-        default:
-            return 0
-        }
+        return 0
     }
+    */
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
-        switch(indexPath.section) {
-        case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier(BankCardCellIdentifier, forIndexPath: indexPath) as BankCardCell
-            cell.typeLabel.text = cards[indexPath.row].type
-            cell.endingLabel.text = cards[indexPath.row].lastFour
-            cell.defaultLabel.hidden = !cards[indexPath.row].isDefault
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier(AddCardCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-            return cell
-            
-        default:
-            return UITableViewCell()
-        }
-        
+        // Configure the cell...
+
+        return cell
     }
-    
-
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -121,6 +97,11 @@ class BankCardTableViewController: UITableViewController,BankCardManagerDelegate
     }
     */
 
+    // Mark: - Tableview Delegate
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        textFields[indexPath.row].becomeFirstResponder()
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -131,52 +112,64 @@ class BankCardTableViewController: UITableViewController,BankCardManagerDelegate
     }
     */
     
-    // Mark: - UITableview Delegate
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if indexPath.section == 1{
-            let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
-            
-            var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
-            alertController.addAction(cancelAction)
-            
-            var setDefaultAction = UIAlertAction(title: "Set as Default", style: UIAlertActionStyle.Default, handler: {
-                (action) -> Void in
-                self.setDefaultCardAtIndex(indexPath.row)
-            })
-            alertController.addAction(setDefaultAction)
-            
-            var deleteAction = UIAlertAction(title: "Delete", style: .Default, handler: {
-                (action) -> Void in
-                self.deleteCardAtIndex(indexPath.row)
-            })
-            alertController.addAction(deleteAction)
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
+    
+    //Mark: - TextField Changed
+    @IBAction func cardNumberFieldChanged(sender: UITextField) {
+        var rawinput = sender.text
+        for i in 0 ..< countElements(rawinput)/4 {
+            rawinput.insert(" ", atIndex: advance(rawinput.startIndex, 5 * i + 4))
         }
-
-        
-        
-    }
-    
-    //Mark: - BankCardManagerDelegate:
-    func bankCardsChanged() {
-        self.tableView.reloadData()
-    }
-    
-    // Mark: - private helper
-    private func setDefaultCardAtIndex(index: Int) {
-        var card = cards[index]
-        cardManager.defaultCard?.unSetDefault()
-        card.setDefault()
-        self.tableView.reloadData()
-        
-    }
-    
-    private func deleteCardAtIndex(index: Int) {
-        var card = cards[index]
-        cardManager.deleteCard(card)
-        self.tableView.reloadData()
+        cardNumberLabel.text = rawinput
     }
 
+    @IBAction func monthYearFieldChanged(sender: UITextField) {
+        var rawinput = sender.text
+        
+        if countElements(rawinput) >= 2 {
+            rawinput.insert("/", atIndex: advance(rawinput.startIndex, 2))
+        }
+        
+        monthYearLabel.text = rawinput
+    }
+    @IBAction func cvcFieldChanged(sender: UITextField) {
+        var rawinput = sender.text
+        cvcLabel.text = rawinput
+    }
+    
+    //Mark: - TextField Delegate
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        var newLength = countElements(textField.text) + countElements(string) - range.length
+        
+        switch (textField){
+        case textFields[0]:
+            return newLength <= 16
+        case textFields[1]:
+            return newLength <= 4
+        case textFields[2]:
+            return newLength <= 3
+        default:
+            return true
+        }
+    }
+    
+    //Mark: - Helper
+    func dismissTextFields() {
+        self.view.endEditing(true)
+    }
+    
+    
+    //Mark: - Target Action
+    @IBAction func AddButtonPressed(sender: AnyObject) {
+        let cardNumber = textFields[0].text
+        let expiration = textFields[1].text
+        let month = expiration.substringToIndex(advance(expiration.startIndex, 2))
+        let year = expiration.substringFromIndex(advance(expiration.startIndex, 2))
+        let cvc = textFields[2].text
+        
+        var card = BankCard(cardNumber: cardNumber, exMonth: month, exYear: year, cvc: cvc)
+        BankCardManager.sharedInstance.addCard(card)
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
 }
