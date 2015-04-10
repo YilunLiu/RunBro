@@ -25,7 +25,6 @@ class OrderDetailViewController: UITableViewController, OrderDetailHeaderViewDel
         
         //table header view
         var headerView = OrderDetailHeaderView(frame: CGRectMake(0, 0, view.frame.width, view.frame.height*2))
-        self.tableView.contentInset = UIEdgeInsetsMake(CGRectGetMaxY(self.navigationController!.navigationBar.frame),0,100,0);
         headerView.delegate = self
         headerView.layoutIfNeeded()
         tableView.tableHeaderView = headerView

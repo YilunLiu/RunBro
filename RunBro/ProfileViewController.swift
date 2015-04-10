@@ -40,7 +40,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegateFlowLayou
         let layoutCopy = UICollectionViewFlowLayout()
         layoutCopy.scrollDirection = UICollectionViewScrollDirection.Horizontal
         layoutCopy.minimumLineSpacing = 10.0
-        layoutCopy.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        layoutCopy.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 0, right: 20)
         myOrderCollectionView.setCollectionViewLayout(layoutCopy, animated: false)
         myOrderCollectionView.backgroundColor = UIColor.clearColor()
         myOrderCollectionView.showsHorizontalScrollIndicator = false

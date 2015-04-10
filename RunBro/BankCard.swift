@@ -13,7 +13,7 @@ class BankCard: PFObject, PFSubclassing {
     @NSManaged var lastFour: String
     @NSManaged var type: String
     @NSManaged var isDefault: Bool
-    
+    @NSManaged var owner: PFUser
     
     
     
@@ -31,8 +31,29 @@ class BankCard: PFObject, PFSubclassing {
     
     override init() {
         super.init()
-        
-        
     }
     
+    
+    convenience init(cardNumber: String, exMonth: String, exYear: String, cvc:String) {
+        self.init()
+        
+        owner = PFUser.currentUser()
+        lastFour = "1111"
+        token = "something"
+        type = "Visa"
+    }
+    
+    func unSetDefault(){
+        self.isDefault = false
+        self.updateCard()
+    }
+    
+    func setDefault() {
+        self.isDefault = true
+        self.updateCard()
+    }
+    
+    func updateCard(){
+        self.pinInBackground()
+    }
 }

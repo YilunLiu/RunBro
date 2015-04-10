@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Parse.enableLocalDatastore()
-        Parse.setApplicationId("vahcEB1e4DSpzF0mJ4rcAdmganRfcuy5APgBlld8", clientKey: "rhEBYhAfOOeWFZBGWLbUZE8OKoVvkvLid1D6ayvz")
+        Parse.setApplicationId("vahcEB1e4DSpzF0mJ4rcAdmganRfcuy5APgBlld8", clientKey: "rhEBYhAfOOeWFZBGWLbUZØE8OKoVvkvLid1D6ayvz")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
         var defaultACL = PFACL()
@@ -30,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var restuarant = Restaurant()
         var menuItem = MenuItem()
         
+        
+        //load data
+        BankCardManager.sharedInstance.loadCardInforamtionInBackground()
         
         return true
     }
