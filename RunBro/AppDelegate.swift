@@ -31,8 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var menuItem = MenuItem()
         
         
-        //load data
-        BankCardManager.sharedInstance.loadCardInforamtionInBackground()
+        // initialize the first view
+        var storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        if let user = PFUser.currentUser(){
+            self.window?.rootViewController = storyBoard.instantiateInitialViewController() as? UIViewController
+            
+            //load data
+            BankCardManager.sharedInstance.loadCardInforamtionInBackground()
+        }
+        else {
+            
+            self.window?.rootViewController = storyBoard.instantiateViewControllerWithIdentifier("IntroductionPageViewController") as? UIViewController
+        }
+        
         
         return true
     }

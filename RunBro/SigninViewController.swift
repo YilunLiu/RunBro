@@ -71,6 +71,7 @@ class SigninViewController: UIViewController, RBInputTextViewDelegate {
     }
 
     @IBAction func closeButtonPressed(sender: AnyObject) {
+        self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

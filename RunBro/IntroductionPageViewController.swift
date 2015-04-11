@@ -17,10 +17,11 @@ class IntroductionPageViewController: UIPageViewController, UIPageViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let initialContentController = self.contentControllerAt(0)
+        //customize setting
         self.dataSource = self;
         
+        //set inital content view
+        let initialContentController = self.contentControllerAt(0)
         self.setViewControllers([initialContentController], direction: .Forward, animated: false, completion: nil)
         
         
