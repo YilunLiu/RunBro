@@ -16,6 +16,13 @@ class SigninViewController: UIViewController, RBInputTextViewDelegate {
     
     let fieldNames = ["Phone Number", "Password"];
     
+    var phoneNumber: String {
+        return inputFields[0].text
+    }
+    
+    var password: String {
+        return inputFields[1].text
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +58,7 @@ class SigninViewController: UIViewController, RBInputTextViewDelegate {
     
     
     func textFieldDidEndEditing(textField: UITextField, fromView inputView: RBInputTextView) {
-        
+        RBUser()
     }
     
     @IBAction func goSignupPressed(sender: AnyObject) {

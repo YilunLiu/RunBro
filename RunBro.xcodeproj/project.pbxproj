@@ -94,6 +94,8 @@
 		5B9C09001ACA732F00971442 /* RBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C08FF1ACA732F00971442 /* RBUser.swift */; };
 		5BD687AA1AD638E2008BC6E7 /* BankCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD687A91AD638E2008BC6E7 /* BankCardManager.swift */; };
 		5BD687AC1AD64B55008BC6E7 /* AddCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD687AB1AD64B55008BC6E7 /* AddCardController.swift */; };
+		5BD687AE1AD8FEC7008BC6E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD687AD1AD8FEC7008BC6E7 /* SettingsViewController.swift */; };
+		5BD687B21AD99C91008BC6E7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD687B11AD99C91008BC6E7 /* MBProgressHUD.m */; };
 		5BDB6EBC1AD0DE9E008E7083 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6EBB1AD0DE9E008E7083 /* MenuItemCell.swift */; };
 		5BFDFBA01AD5C9160006F29F /* BankCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFDFB9F1AD5C9160006F29F /* BankCardCell.swift */; };
 /* End PBXBuildFile section */
@@ -189,6 +191,9 @@
 		5B9C08FF1ACA732F00971442 /* RBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBUser.swift; sourceTree = "<group>"; };
 		5BD687A91AD638E2008BC6E7 /* BankCardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardManager.swift; sourceTree = "<group>"; };
 		5BD687AB1AD64B55008BC6E7 /* AddCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardController.swift; sourceTree = "<group>"; };
+		5BD687AD1AD8FEC7008BC6E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5BD687B01AD99C91008BC6E7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		5BD687B11AD99C91008BC6E7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5BDB6EBB1AD0DE9E008E7083 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		5BFDFB9F1AD5C9160006F29F /* BankCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,6 +287,7 @@
 		5B9B9C6B1ACBAA24007AAE79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5BD687AF1AD99C81008BC6E7 /* ProgressIndicator */,
 				5BFDFB9E1AD5C8FE0006F29F /* BankCard */,
 				5B3C85951AD08C30002107E8 /* Restuarants */,
 				5B9B9CC31ACE5498007AAE79 /* PopUpView */,
@@ -418,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				5B9B9CAF1ACD28AD007AAE79 /* ProfileViewController.swift */,
+				5BD687AD1AD8FEC7008BC6E7 /* SettingsViewController.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -587,6 +594,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		5BD687AF1AD99C81008BC6E7 /* ProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				5BD687B01AD99C91008BC6E7 /* MBProgressHUD.h */,
+				5BD687B11AD99C91008BC6E7 /* MBProgressHUD.m */,
+			);
+			name = ProgressIndicator;
+			sourceTree = "<group>";
+		};
 		5BFDFB9E1AD5C8FE0006F29F /* BankCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,12 +746,14 @@
 				5B9B9CB81ACE4826007AAE79 /* RBInputTextView.swift in Sources */,
 				5BDB6EBC1AD0DE9E008E7083 /* MenuItemCell.swift in Sources */,
 				5B9B9CB41ACD2934007AAE79 /* OrderCollectionViewFlowLayoutCell.swift in Sources */,
+				5BD687AE1AD8FEC7008BC6E7 /* SettingsViewController.swift in Sources */,
 				5B9B9CAA1ACD1D34007AAE79 /* Golbal Variables.swift in Sources */,
 				5B9B9C891ACBAB33007AAE79 /* HomeViewController.swift in Sources */,
 				5B21B2531AD5C1FE00DD4B94 /* BankCardTableViewController.swift in Sources */,
 				5B3C858F1AD0819E002107E8 /* Restuarant.swift in Sources */,
 				5B3C858B1AD0759A002107E8 /* RestaurantsTableViewController.swift in Sources */,
 				5BD687AC1AD64B55008BC6E7 /* AddCardController.swift in Sources */,
+				5BD687B21AD99C91008BC6E7 /* MBProgressHUD.m in Sources */,
 				5B9B9CA51ACD1C96007AAE79 /* OrderStatusInProcessView.swift in Sources */,
 				5B9B9C8F1ACBABFC007AAE79 /* FixtureManager.swift in Sources */,
 				5B9B9C991ACD1BC9007AAE79 /* OrderDetailViewController.swift in Sources */,

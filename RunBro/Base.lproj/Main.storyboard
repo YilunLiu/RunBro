@@ -490,7 +490,7 @@
             <objects>
                 <tableViewController id="wcy-Ba-90k" customClass="BankCardTableViewController" customModule="RunBro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="fP6-6c-9jc">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
@@ -582,7 +582,7 @@
             <objects>
                 <tableViewController id="jmg-U8-QvL" customClass="AddCardController" customModule="RunBro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="YXq-rs-JnU">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -618,11 +618,11 @@
                                                 <constraint firstItem="UiS-CV-WG6" firstAttribute="leading" secondItem="Jgq-Fy-gSp" secondAttribute="trailing" constant="8" id="MN1-sI-rcr"/>
                                                 <constraint firstItem="UiS-CV-WG6" firstAttribute="top" secondItem="wdv-RM-dYh" secondAttribute="topMargin" id="Ssl-9c-Pt0"/>
                                                 <constraint firstItem="Jgq-Fy-gSp" firstAttribute="top" secondItem="wdv-RM-dYh" secondAttribute="topMargin" constant="8" id="XJO-7Z-EhQ"/>
-                                                <constraint firstItem="wpd-vj-6YH" firstAttribute="trailing" secondItem="wdv-RM-dYh" secondAttribute="trailingMargin" id="bhu-ow-lsE"/>
+                                                <constraint firstItem="wpd-vj-6YH" firstAttribute="trailing" secondItem="wdv-RM-dYh" secondAttribute="trailingMargin" constant="-592" id="bhu-ow-lsE"/>
                                                 <constraint firstAttribute="centerY" secondItem="Jgq-Fy-gSp" secondAttribute="centerY" id="fJc-O5-pWq"/>
                                                 <constraint firstItem="UiS-CV-WG6" firstAttribute="trailing" secondItem="wdv-RM-dYh" secondAttribute="trailingMargin" id="i7p-HO-dDB"/>
                                                 <constraint firstItem="Jgq-Fy-gSp" firstAttribute="leading" secondItem="wdv-RM-dYh" secondAttribute="leadingMargin" constant="8" id="pOy-Qo-dbk"/>
-                                                <constraint firstItem="Jgq-Fy-gSp" firstAttribute="centerY" secondItem="wpd-vj-6YH" secondAttribute="centerY" id="seE-wn-GMe"/>
+                                                <constraint firstItem="Jgq-Fy-gSp" firstAttribute="centerY" secondItem="wpd-vj-6YH" secondAttribute="centerY" constant="24" id="seE-wn-GMe"/>
                                                 <constraint firstItem="UiS-CV-WG6" firstAttribute="bottom" secondItem="wdv-RM-dYh" secondAttribute="bottomMargin" id="wYV-VO-iwE"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -655,9 +655,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ILv-bT-fHD" firstAttribute="leading" secondItem="vWB-PJ-RjM" secondAttribute="leadingMargin" constant="8" id="74M-bT-Pti"/>
-                                                <constraint firstItem="Xbh-aY-V17" firstAttribute="trailing" secondItem="vWB-PJ-RjM" secondAttribute="trailingMargin" id="7Bw-XK-ch4"/>
+                                                <constraint firstItem="Xbh-aY-V17" firstAttribute="trailing" secondItem="vWB-PJ-RjM" secondAttribute="trailingMargin" constant="-592" id="7Bw-XK-ch4"/>
                                                 <constraint firstItem="ehE-fG-nbn" firstAttribute="top" secondItem="vWB-PJ-RjM" secondAttribute="topMargin" id="7KY-ig-aam"/>
-                                                <constraint firstItem="ILv-bT-fHD" firstAttribute="centerY" secondItem="Xbh-aY-V17" secondAttribute="centerY" id="NcG-b4-nN7"/>
+                                                <constraint firstItem="ILv-bT-fHD" firstAttribute="centerY" secondItem="Xbh-aY-V17" secondAttribute="centerY" constant="25" id="NcG-b4-nN7"/>
                                                 <constraint firstAttribute="centerY" secondItem="ILv-bT-fHD" secondAttribute="centerY" id="OTb-Ar-3zl"/>
                                                 <constraint firstItem="ehE-fG-nbn" firstAttribute="leading" secondItem="ILv-bT-fHD" secondAttribute="trailing" constant="8" id="Tia-4I-xbd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ehE-fG-nbn" secondAttribute="trailing" id="hbL-Ic-YDV"/>
@@ -693,12 +693,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rkr-yk-LEe" firstAttribute="centerY" secondItem="IwF-YW-4RH" secondAttribute="centerY" id="0LT-uL-zpV"/>
+                                                <constraint firstItem="rkr-yk-LEe" firstAttribute="centerY" secondItem="IwF-YW-4RH" secondAttribute="centerY" constant="-25" id="0LT-uL-zpV"/>
                                                 <constraint firstItem="IwF-YW-4RH" firstAttribute="leading" secondItem="7XL-IL-zVL" secondAttribute="leadingMargin" constant="8" id="RfR-eE-CFf"/>
                                                 <constraint firstAttribute="centerY" secondItem="IwF-YW-4RH" secondAttribute="centerY" id="bBy-K2-iLD"/>
                                                 <constraint firstItem="xNt-Pf-c0p" firstAttribute="bottom" secondItem="7XL-IL-zVL" secondAttribute="bottomMargin" id="blB-L2-uMD"/>
                                                 <constraint firstItem="xNt-Pf-c0p" firstAttribute="trailing" secondItem="7XL-IL-zVL" secondAttribute="trailingMargin" id="cJ7-v8-UXm"/>
-                                                <constraint firstItem="rkr-yk-LEe" firstAttribute="trailing" secondItem="7XL-IL-zVL" secondAttribute="trailingMargin" id="e7z-sH-4N8"/>
+                                                <constraint firstItem="rkr-yk-LEe" firstAttribute="trailing" secondItem="7XL-IL-zVL" secondAttribute="trailingMargin" constant="-592" id="e7z-sH-4N8"/>
                                                 <constraint firstItem="xNt-Pf-c0p" firstAttribute="top" secondItem="7XL-IL-zVL" secondAttribute="topMargin" id="fSj-tv-Lcv"/>
                                                 <constraint firstItem="xNt-Pf-c0p" firstAttribute="leading" secondItem="IwF-YW-4RH" secondAttribute="trailing" constant="8" id="jOY-wm-E2f"/>
                                                 <constraint firstItem="IwF-YW-4RH" firstAttribute="top" secondItem="7XL-IL-zVL" secondAttribute="topMargin" constant="8" id="p53-W9-ExA"/>
@@ -989,10 +989,10 @@
                                                 <constraint firstItem="ayw-WC-wTP" firstAttribute="leading" secondItem="R0C-JS-TLm" secondAttribute="leadingMargin" constant="8" id="6GW-jy-Ayu"/>
                                                 <constraint firstAttribute="centerY" secondItem="ayw-WC-wTP" secondAttribute="centerY" id="76L-24-9WT"/>
                                                 <constraint firstItem="ayw-WC-wTP" firstAttribute="top" secondItem="R0C-JS-TLm" secondAttribute="topMargin" constant="4" id="N6E-ke-Egh"/>
-                                                <constraint firstItem="EIa-ZX-1PN" firstAttribute="trailing" secondItem="BHK-Ja-yCG" secondAttribute="trailing" id="VDp-tZ-kM7"/>
-                                                <constraint firstItem="ayw-WC-wTP" firstAttribute="centerY" secondItem="EIa-ZX-1PN" secondAttribute="centerY" constant="0.5" id="hfe-FS-E47"/>
+                                                <constraint firstItem="EIa-ZX-1PN" firstAttribute="trailing" secondItem="BHK-Ja-yCG" secondAttribute="trailing" constant="-584" id="VDp-tZ-kM7"/>
+                                                <constraint firstItem="ayw-WC-wTP" firstAttribute="centerY" secondItem="EIa-ZX-1PN" secondAttribute="centerY" constant="22" id="hfe-FS-E47"/>
                                                 <constraint firstItem="BHK-Ja-yCG" firstAttribute="leading" secondItem="ayw-WC-wTP" secondAttribute="trailing" id="j0g-U0-H4r"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="EIa-ZX-1PN" secondAttribute="trailing" constant="8" id="n5y-x6-AsH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="EIa-ZX-1PN" secondAttribute="trailing" constant="592" id="n5y-x6-AsH"/>
                                                 <constraint firstItem="ayw-WC-wTP" firstAttribute="baseline" secondItem="BHK-Ja-yCG" secondAttribute="baseline" id="p1I-2e-63d"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1399,7 +1399,7 @@
         <!--Settings-->
         <scene sceneID="Mdp-sa-9bA">
             <objects>
-                <tableViewController id="OBB-nD-MUH" sceneMemberID="viewController">
+                <tableViewController id="OBB-nD-MUH" customClass="SettingsViewController" customModule="RunBro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hUW-ft-aV2">
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1805,7 +1805,7 @@
                                     <constraint firstAttribute="height" constant="70" id="iiz-ov-JyP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fv-bJ-Wgd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fv-bJ-Wgd">
                                 <rect key="frame" x="247" y="150" width="107" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="u9d-vy-lca"/>
@@ -1929,6 +1929,6 @@
         <image name="CloseImage" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F1j-Gs-daW"/>
+        <segue reference="lw7-lp-FqB"/>
     </inferredMetricsTieBreakers>
 </document>

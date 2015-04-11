@@ -31,6 +31,10 @@ class RBInputTextView: UIView, UITextFieldDelegate {
     
     var delegate: RBInputTextViewDelegate!
     
+    var text: String {
+        return textField.text
+    }
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

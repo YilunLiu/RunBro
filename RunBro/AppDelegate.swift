@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Parse.enableLocalDatastore()
-        Parse.setApplicationId("vahcEB1e4DSpzF0mJ4rcAdmganRfcuy5APgBlld8", clientKey: "rhEBYhAfOOeWFZBGWLbUZØE8OKoVvkvLid1D6ayvz")
+        Parse.setApplicationId("vahcEB1e4DSpzF0mJ4rcAdmganRfcuy5APgBlld8", clientKey: "rhEBYhAfOOeWFZBGWLbUZE8OKoVvkvLid1D6ayvz")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
         var defaultACL = PFACL()
@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var menuItem = MenuItem()
         
         
+
+
         // initialize the first view
         var storyBoard = UIStoryboard(name: "Main", bundle: nil)
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
